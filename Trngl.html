@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <style type="text/css">
+		table, tr, td, th {
+			text-align: center;
+			border-color: black;
+			border-style: solid;
+			border-width: 2px;
+			border-collapse: collapse;
+		}
+
+		th {
+			background-color: indianred;
+		}
+
+		td {
+			padding: 10px;
+		}
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="TrnglClass.js"></script>
+</head>
+
+<body>
+    <button onclick="data.add()">Добавить треугольник</button>
+    <br>
+    <br>
+    <table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Катет 1</th>
+				<th>Катет 2</th>
+				<th>Гипотенуза</th>
+				<th>Угол</th>
+				<th>Радиус вписанной окружности</th>
+                <th>Расстояние между впис. и опис.</th>
+				<th>Изменение на, +-%</th>
+                <th>Подтверждение</th>
+                <th>Удаление</th>
+			</tr>
+		</thead>
+		<tbody id="triangles"></tbody>
+	</table>    
+    <script type="text/javascript">data.refreshTable()</script>
+</body>
+</html>
